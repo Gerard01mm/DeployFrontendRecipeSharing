@@ -7,7 +7,8 @@ module.exports = {
         devServer: {
             devMiddleware: {
                 writeToDisk: true
-            }
+            },
+            proxy: "https://recipesharingfrontend.onrender.com"
         }
     }
 }
