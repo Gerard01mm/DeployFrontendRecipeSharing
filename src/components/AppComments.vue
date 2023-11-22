@@ -70,7 +70,7 @@ export default {
             };
 
             axios
-                .post("recipesPostRatings/", {
+                .post("https://recipesharingbackend.onrender.com/recipesPostRatings/", {
                     user_id: this.username,
                     recipe_id: this.recipe_id,
                     comment: comment,

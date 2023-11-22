@@ -72,7 +72,7 @@ export default {
             }
 
             try {
-                let response = await axios.post('/login/', {
+                let response = await axios.post('https://recipesharingbackend.onrender.com/login/', {
                     username: this.username,
                     email: this.email,
                     password: this.password,

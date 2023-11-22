@@ -164,7 +164,7 @@ export default {
         getRating() {
             // Axios para recibir los ratings
             axios
-            axios.get(`recipes/getratings/${this.recipe_id}/`)
+            axios.get(`https://recipesharingbackend.onrender.com/recipes/getratings/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const ratings = response.data;
@@ -181,7 +181,7 @@ export default {
         addRating() {
             //axios para postear el rating de una receta
             axios
-                .post("recipes/postratings/", {
+                .post("https://recipesharingbackend.onrender.com/recipes/postratings/", {
                     user_id: this.username,
                     recipe_id: this.recipe.id,
                     rating: this.rating

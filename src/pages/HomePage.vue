@@ -406,7 +406,7 @@ export default {
                         prev = true;
                     }
                 }
-                const response = await axios.get(endpoint);
+                const response = await axios.get("https://recipesharingbackend.onrender.com" + endpoint);
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
                     this.recipesByFilter = recipes;
@@ -432,7 +432,7 @@ export default {
         },
         async fetchData() {
             try {
-                await axios.get("/");
+                await axios.get("https://recipesharingbackend.onrender.com/");
                 // Puedes realizar alguna lógica con los datos si es necesario
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -441,7 +441,7 @@ export default {
         async getRecipesByRate() {
             await this.fetchData();
             try {
-                const response = await axios.get("recipes/rate/");
+                const response = await axios.get("https://recipesharingbackend.onrender.com/recipes/rate/");
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
                     // Puedes manejar las recetas de 'rate' de manera específica aquí
@@ -455,7 +455,7 @@ export default {
         async getRecipesByRecent() {
             await this.fetchData();
             try {
-                const response = await axios.get("recipes/recent/");
+                const response = await axios.get("https://recipesharingbackend.onrender.com/recipes/recent/");
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
                     // Puedes manejar las recetas de 'recent' de manera específica aquí

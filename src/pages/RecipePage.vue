@@ -137,7 +137,7 @@ export default {
         },
         getRating() {
             // Axios para recibir los ratings
-            axios.get(`recipes/getratings/${this.recipe_id}/`)
+            axios.get(`https://recipesharingbackend.onrender.com/recipes/getratings/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const ratings = response.data;
@@ -153,7 +153,7 @@ export default {
         addRating() {
             //axios para postear el rating de una receta
             axios
-                .post("recipesPostRatings/", {
+                .post("https://recipesharingbackend.onrender.com/recipesPostRatings/", {
                     user_id: this.username, 
                     recipe_id: this.recipe.id,
                     rating: this.rating,
@@ -173,7 +173,7 @@ export default {
         getRecipeInformation() {
             // Axios para recibir las recetas
             axios
-                .get(`recipe/${this.recipe_id}/`)
+                .get(`https://recipesharingbackend.onrender.com/recipe/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const info = response.data.recipe;
@@ -189,7 +189,7 @@ export default {
             // Lógica para agregar o quitar de favoritos
             this.isFavorited = !this.isFavorited;
             axios
-                .post("recipesAddFavorites/", {
+                .post("https://recipesharingbackend.onrender.com/recipesAddFavorites/", {
                     user_id: this.username,
                     recipe_id: this.recipe.id,
                 })
@@ -209,7 +209,7 @@ export default {
         getUserInformation() {
             // Axios para recibir lla información del usuario
             axios
-                .get(`user/${this.username}/`)
+                .get(`https://recipesharingbackend.onrender.com/user/${this.username}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const info = response.data.user;

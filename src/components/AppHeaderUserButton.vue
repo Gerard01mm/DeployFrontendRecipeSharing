@@ -67,7 +67,7 @@ export default {
         },
         async logout() {
             try {
-                let response = await axios.post('/login/', {
+                let response = await axios.post('https://recipesharingbackend.onrender.com/login/', {
                     username: "Logout",
                     email: this.email,
                     password: this.password,
