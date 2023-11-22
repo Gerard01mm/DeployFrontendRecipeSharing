@@ -1,0 +1,127 @@
+[
+  {
+    "groupName": "None Allergens",
+    "options": [
+      "None"
+    ]
+  },
+  {
+    "groupName": "Common Allergens",
+    "options": [
+      "Cereals containing gluten - ",
+      "Crustaceans",
+      "Eggs",
+      "Fish",
+      "Peanuts",
+      "Soybeans",
+      "Milk",
+      "Nuts",
+      "Celery",
+      "Mustard",
+      "Sesame seeds",
+      "Sulphur dioxide and sulphites",
+      "Lupin",
+      "Molluscs"
+    ]
+  },
+  {
+    "groupName": "Fruits",
+    "options": [
+      "Apples",
+      "Bananas",
+      "Kiwis",
+      "Mangos",
+      "Peaches",
+      "Plums",
+      "Grapes",
+      "Cherries",
+      "Strawberries",
+      "Oranges",
+      "Lemons",
+      "Raspberries",
+      "Blackberries",
+      "Papayas",
+      "Watermelons",
+      "Pineapples"
+  ]
+  },
+  {
+    "groupName": "Vegetables",
+    "options": [
+      "Tomatoes",
+      "Peppers (e.g., bell peppers, chili peppers)",
+      "Potatoes",
+      "Carrots",
+      "Cucumbers",
+      "Celery",
+      "Onions",
+      "Garlic",
+      "Spinach",
+      "Lettuce",
+      "Zucchini",
+      "Broccoli",
+      "Cauliflower",
+      "Asparagus",
+      "Radishes",
+      "Eggplants (aubergines)",
+      "Peas",
+      "Corn",
+      "Beets",
+      "Sweet potatoes"
+  ]
+  },
+  {
+    "groupName": "Meat",
+    "options": [
+      "Beef",
+      "Pork",
+      "Chicken",
+      "Turkey",
+      "Lamb",
+      "Duck",
+      "Goose",
+      "Venison (deer meat)",
+      "Rabbit",
+      "Bison",
+      "Horse meat",
+      "Kangaroo",
+      "Alligator",
+      "Ostrich",
+      "Wild boar",
+      "Bear meat",
+      "Elk",
+      "Emu",
+      "Turtle",
+      "Snake"
+  ]
+  },
+  {
+    "groupName": "Dairy Alternatives",
+    "options": [
+      "Almond milk",
+      "Soy milk",
+      "Oat milk",
+      "Coconut milk",
+      "Rice milk",
+      "Cashew milk",
+      "Hemp milk",
+      "Macadamia milk",
+      "Hazelnut milk",
+      "Pea milk",
+      "Flax milk",
+      "Quinoa milk",
+      "Walnut milk",
+      "Sunflower milk",
+      "Tiger nut milk",
+      "Chia milk",
+      "Potato milk",
+      "Sesame milk",
+      "Banana milk",
+      "Spelt milk",
+      "Kamut milk",
+      "Barley milk",
+      "Teff milk",
+      "Amaranth milk"
+  ]
+  }
+]
