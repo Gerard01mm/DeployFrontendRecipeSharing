@@ -69,6 +69,7 @@ export default {
 
 .card-carousel {
     text-align: center;
+    width: 100%;
 }
 
 .carousel-container {
