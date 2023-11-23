@@ -16,11 +16,11 @@
         </div>
         <div class="add-comment">
             <div class="textfield-container">
-                <label class="label" for="commentInput">Añadir comentario:</label>
+                <label class="label" for="commentInput">Add comment:</label>
                 <textarea
                         v-model="newComment"
                         id="commentInput"
-                        placeholder="Escribe tu comentario aquí"
+                        placeholder="Write your comment"
                         class="textarea"
                 ></textarea>
             </div>
@@ -60,7 +60,7 @@ export default {
         addComment() {
 
             if (this.checkComment()) {
-                alert("No review was writed")
+                alert("No comment written")
                 return
             }
             const comment = {
