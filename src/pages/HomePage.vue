@@ -406,7 +406,7 @@ export default {
                         prev = true;
                     }
                 }
-                const response = await axios.get("https://recipesharingbackend.onrender.com" + endpoint);
+                const response = await axios.get("https://recipesharingbackend.onrender.com/" + endpoint);
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
                     this.recipesByFilter = recipes;
