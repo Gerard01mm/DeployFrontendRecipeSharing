@@ -406,6 +406,8 @@ export default {
                         prev = true;
                     }
                 }
+                const url = "https://recipesharingbackend.onrender.com/" + endpoint
+                console.log("URL:", url)
                 const response = await axios.get("https://recipesharingbackend.onrender.com/" + endpoint);
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
