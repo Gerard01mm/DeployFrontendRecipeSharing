@@ -19,7 +19,7 @@
     <div class="secondaryContainer">
       <div class="titleContainerHP">
         <div class="mainTitleHP">
-          <h1> Favourite Recipes </h1>
+          <h1> Favorite Recipes </h1>
         </div>
       </div>
       <AppCardCarousel
@@ -78,7 +78,7 @@ export default {
         getUserInformation() {
             // Axios para recibir lla información del usuario
             axios
-                .get(`https://recipesharingbackend.onrender.com/user/${this.username}/`)
+                .get(`user/${this.username}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const info = response.data.user;
