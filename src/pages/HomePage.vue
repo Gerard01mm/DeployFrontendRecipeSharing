@@ -406,9 +406,7 @@ export default {
                         prev = true;
                     }
                 }
-                const url = "https://recipesharingbackend.onrender.com/" + endpoint
-                console.log("URL:", url)
-                const response = await axios.get("https://recipesharingbackend.onrender.com/" + endpoint);
+                const response = await axios.get(endpoint);
                 if (response.status === 200) {
                     const recipes = response.data.recipes;
                     this.recipesByFilter = recipes;
@@ -434,7 +432,7 @@ export default {
         },
         async fetchData() {
             try {
-                await axios.get("https://recipesharingbackend.onrender.com/");
+                await axios.get("/");
                 // Puedes realizar alguna lógica con los datos si es necesario
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -443,12 +441,12 @@ export default {
         async getRecipesByRate() {
             await this.fetchData();
             try {
-                const response = await axios.get("https://recipesharingbackend.onrender.com/recipes/rate/");
+                const response = await axios.get("recipes/rate/");
                 if (response.status === 200) {
-                    const recipes = response.data.recipes;
+                    const recipes = response.data;
                     // Puedes manejar las recetas de 'rate' de manera específica aquí
                     this.recipesByRate = recipes;
-                    console.log(response.data.recipes);
+                    console.log(response.data);
                 }
             } catch (error) {
                 console.error("Error fetching recipes by rate:", error);
@@ -457,12 +455,12 @@ export default {
         async getRecipesByRecent() {
             await this.fetchData();
             try {
-                const response = await axios.get("https://recipesharingbackend.onrender.com/recipes/recent/");
+                const response = await axios.get("recipes/recent/");
                 if (response.status === 200) {
-                    const recipes = response.data.recipes;
+                    const recipes = response.data;
                     // Puedes manejar las recetas de 'recent' de manera específica aquí
                     this.recipesByDate = recipes;
-                    console.log(response.data.recipes);
+                    console.log(response.data);
                 }
             } catch (error) {
                 console.error("Error fetching recent recipes:", error);
