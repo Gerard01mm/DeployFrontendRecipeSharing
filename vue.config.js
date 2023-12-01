@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: 'https://recipesharingfrontend.onrender.com',
+    publicPath: 'https://recipesharingbackend.onrender.com',
     //outputDir: '../static/dist',
     //indexPath: '../../templates/_base_vue.html',
 
