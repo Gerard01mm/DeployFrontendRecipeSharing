@@ -206,7 +206,7 @@ export default {
             }
 
             axios
-                .post("https://recipesharingbackend.onrender.com/addRecipe/", {
+                .post("https://recipesharing.azurewebsites.net/addRecipe/", {
                     name: this.recipeName,
                     ingredients: this.allSelectedIngredients,
                     instructions: this.instructions,

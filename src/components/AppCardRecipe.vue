@@ -164,7 +164,7 @@ export default {
         getRating() {
             // Axios para recibir los ratings
             axios
-            axios.get(`https://recipesharingbackend.onrender.com/recipes/getratings/${this.recipe_id}/`)
+            axios.get(`https://recipesharing.azurewebsites.net/recipes/getratings/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const ratings = response.data;
@@ -181,7 +181,7 @@ export default {
         addRating() {
             //axios para postear el rating de una receta
             axios
-                .post("https://recipesharingbackend.onrender.com/recipes/postratings/", {
+                .post("https://recipesharing.azurewebsites.net/recipes/postratings/", {
                     user_id: this.username,
                     recipe_id: this.recipe.id,
                     rating: this.rating

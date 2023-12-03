@@ -137,7 +137,7 @@ export default {
         },
         getRating() {
             // Axios para recibir los ratings
-            axios.get(`https://recipesharingbackend.onrender.com/recipes/getratings/${this.recipe_id}/`)
+            axios.get(`https://recipesharing.azurewebsites.net/recipes/getratings/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const ratings = response.data;
@@ -153,7 +153,7 @@ export default {
         addRating() {
             //axios para postear el rating de una receta
             axios
-                .post("https://recipesharingbackend.onrender.com/recipesPostRatings/", {
+                .post("https://recipesharing.azurewebsites.net/recipesPostRatings/", {
                     user_id: this.username, 
                     recipe_id: this.recipe.id,
                     rating: this.rating,
@@ -173,7 +173,7 @@ export default {
         getRecipeInformation() {
             // Axios para recibir las recetas
             axios
-                .get(`https://recipesharingbackend.onrender.com/recipe/${this.recipe_id}/`)
+                .get(`https://recipesharing.azurewebsites.net/recipe/${this.recipe_id}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const info = response.data.recipe;
@@ -189,7 +189,7 @@ export default {
             // Lógica para agregar o quitar de favoritos
             this.isFavorited = !this.isFavorited;
             axios
-                .post("https://recipesharingbackend.onrender.com/recipesAddFavorites/", {
+                .post("https://recipesharing.azurewebsites.net/recipesAddFavorites/", {
                     user_id: this.username,
                     recipe_id: this.recipe.id,
                 })
@@ -209,7 +209,7 @@ export default {
         getUserInformation() {
             // Axios para recibir lla información del usuario
             axios
-                .get(`https://recipesharingbackend.onrender.com/user/${this.username}/`)
+                .get(`https://recipesharing.azurewebsites.net/user/${this.username}/`)
                 .then((response) => {
                     if (response.status === 200) {
                         const info = response.data.user;

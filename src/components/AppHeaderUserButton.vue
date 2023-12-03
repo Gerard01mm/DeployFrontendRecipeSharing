@@ -67,7 +67,7 @@ export default {
         },
         async logout() {
             try {
-                let response = await axios.post('https://recipesharingbackend.onrender.com/login/', {
+                let response = await axios.post('https://recipesharing.azurewebsites.net/login/', {
                     username: "Logout",
                     email: this.email,
                     password: this.password,

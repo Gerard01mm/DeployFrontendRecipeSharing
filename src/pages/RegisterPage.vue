@@ -155,7 +155,7 @@ export default {
             }
             try {
                 // Send a registration request to the server
-                let response = await axios.post('https://recipesharingbackend.onrender.com/register/', {
+                let response = await axios.post('https://recipesharing.azurewebsites.net/register/', {
                     username: this.username,
                     email: this.email,
                     password: this.password,
